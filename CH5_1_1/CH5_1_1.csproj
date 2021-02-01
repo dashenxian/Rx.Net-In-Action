@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<Revision>$([System.DateTime]::Now.ToString("2.0.yyyy.MMdd"))</Revision>
+		<AssemblyVersion>$(Revision)</AssemblyVersion>
+		<Version>$(Revision)</Version>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ObserveCommon\ObserveCommon.csproj" />
+	</ItemGroup>
+
+</Project>
